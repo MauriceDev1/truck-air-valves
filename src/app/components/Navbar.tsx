@@ -52,8 +52,8 @@ function MobileMenuButton({ onClick } : {
   )
 }
 
-function MobileMenu({ open, onClose } : {
-  open : boolean;
+function MobileMenu({ open, onClose }: {
+  open: boolean;
   onClose: () => void;
 }) {
   return (
@@ -61,7 +61,7 @@ function MobileMenu({ open, onClose } : {
       <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div className="flex items-center justify-between">
           <Link href="/" aria-label="Your Company" className="-m-1.5 p-1.5">
-          {/* <Image
+            {/* <Image
               src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
               alt="Your Company Logo"
               className="h-8 w-auto"
@@ -78,41 +78,23 @@ function MobileMenu({ open, onClose } : {
             <XMarkIcon className="h-6 w-6" />
           </button>
         </div>
-        <div className="mt-6 space-y-2">
-          <Disclosure>
-            <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">
-              Products
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" />
-            </DisclosureButton>
-            <DisclosurePanel className="space-y-2 pl-6">
-              {products.map((item) => (
-                <Link key={item.name} href={item.href} className="block py-2 text-sm text-gray-900 hover:bg-gray-50">
-                  {item.name}
-                </Link>
-              ))}
-              {callsToAction.map((action) => (
-                <Link key={action.name} href={action.href} className="block py-2 text-sm text-gray-900 hover:bg-gray-50">
-                  {action.name}
-                </Link>
-              ))}
-            </DisclosurePanel>
-          </Disclosure>
-          <Link href="/features" className="block py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">
-            Features
+        <div className="mt-16 space-y-5">
+          <Link href="/products" className="block py-2 text-base font-semibold text-gray-900 hover:bg-gray-50" onClick={onClose}>
+            Products
           </Link>
-          <Link href="/marketplace" className="block py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">
-            Marketplace
+          <Link href="/about" className="block py-2 text-base font-semibold text-gray-900 hover:bg-gray-50" onClick={onClose}>
+            About us
           </Link>
-          <Link href="/company" className="block py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">
-            Company
+          <Link href="/contact" className="block py-2 text-base font-semibold text-gray-900 hover:bg-gray-50" onClick={onClose}>
+            Contact us
           </Link>
-          <Link href="/login" className="block py-2.5 text-base font-semibold text-gray-900 hover:bg-gray-50">
+          <Link href="/login" className="block py-2.5 text-base font-semibold text-gray-900 hover:bg-gray-50" onClick={onClose}>
             Log in
           </Link>
         </div>
       </DialogPanel>
     </Dialog>
-  )
+  );
 }
 
 export default function Navbar() {
