@@ -1,10 +1,9 @@
-"use client"
+"use client";
 
 // Import Swiper components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Image from 'next/image';
-
 
 const parts = [
   {
@@ -27,10 +26,28 @@ const parts = [
     name: 'air 4 valve',
     image: '/Images/56522c07-6e3c-4831-b3b6-834d08225634-removebg-preview.png'
   },
-]
+];
 
 const Carousel = () => (
-  <Swiper spaceBetween={20} slidesPerView={4} loop={true} autoplay={{ delay: 3000 }}>
+  <Swiper
+    spaceBetween={20}
+    loop={true}
+    autoplay={{ delay: 3000 }}
+    breakpoints={{
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 1, // Show 1 slide on small devices
+      },
+      // when window width is > 640px and <= 768px
+      768: {
+        slidesPerView: 2, // Show 2 slides on medium devices
+      },
+      // when window width is > 768px
+      769: {
+        slidesPerView: 4, // Show 4 slides on larger devices
+      },
+    }}
+  >
     {parts.map(p => (
       <SwiperSlide key={p.id}>
         <div className='h-56 w-full flex bg-gray-100'>
@@ -40,11 +57,11 @@ const Carousel = () => (
             width={1000}
             height={1000}
             className="w-48 m-auto"
-            />
+          />
         </div>
       </SwiperSlide>
-
     ))}
   </Swiper>
 );
+
 export default Carousel;

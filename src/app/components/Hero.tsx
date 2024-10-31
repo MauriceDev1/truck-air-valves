@@ -17,7 +17,7 @@ export default function Hero () {
                     </p>
                 </Link>
             </div>
-            <div className="lg:w-1/2">
+            <div className="mt-10 lg:w-1/2">
                 <Image
                     src="/Images/iveco-s-way.png"
                     alt=""
