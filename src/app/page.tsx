@@ -4,6 +4,7 @@ import Image from "next/image";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 import Carousel from "./components/Carousel";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -89,10 +90,24 @@ export default function Home() {
                 alt=""
                 width={1000}
                 height={1000}
-                className="w-96 m-auto"
+                className="w-96 m-auto mt-5"
               />
             </div>
-            <div className="w-2/3"></div>
+            <div className="w-2/3 flex">
+              <div className="m-auto">
+                  <h1 className="text-6xl font-bold text-gray-700">
+                    Reliable Truck Parts, Refurbished to Perfection!
+                  </h1>
+                  <p>
+
+                  </p>
+                  <Link href="/products" className="">
+                      <p className="bg-black text-white py-3 mt-4 rounded-md w-56 hover:bg-gray-500 duration-500 text-center">
+                          Browse Parts
+                      </p>
+                  </Link>
+              </div>
+            </div>
           </div>
         </div>
 

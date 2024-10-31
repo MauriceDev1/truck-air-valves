@@ -7,21 +7,21 @@ const testimonials = [
     name: 'John Doe',
     role: 'CEO of Example Co.',
     text: 'This product has transformed our business! The service and support have been fantastic. Highly recommend!',
-    image: '/path-to-image/john.jpg',
+    image: '/Images/ashton-bingham-EQFtEzJGERg-unsplash (1).jpg',
   },
   {
     id: 2,
     name: 'Jane Smith',
     role: 'CTO of Another Co.',
     text: 'Amazing experience with this team. The quality and dedication are top-notch.',
-    image: '/path-to-image/jane.jpg',
+    image: '/Images/vladislav-todorov-joINR2EKnvY-unsplash (1).jpg',
   },
   {
     id: 3,
     name: 'Alice Brown',
     role: 'Product Manager at Some Co.',
     text: 'I love using this product. It’s user-friendly, and the customer support is excellent!',
-    image: '/path-to-image/alice.jpg',
+    image: '/Images/christopher-campbell-rDEOVtE7vOs-unsplash (1).jpg',
   },
 ];
 
