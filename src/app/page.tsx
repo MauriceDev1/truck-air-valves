@@ -102,7 +102,7 @@ export default function Home() {
 
                   </p>
                   <Link href="/products" className="">
-                      <p className="bg-black text-white py-3 mt-4 rounded-md w-56 hover:bg-gray-500 duration-500 text-center">
+                      <p className="bg-black text-white py-3 mt-10 rounded-md w-56 hover:bg-gray-500 duration-500 text-center">
                           Browse Parts
                       </p>
                   </Link>
