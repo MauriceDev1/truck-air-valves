@@ -4,13 +4,7 @@ import { useState } from 'react'
 import {
   Dialog,
   DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  // Popover,
-  // PopoverButton,
   PopoverGroup,
-  // PopoverPanel,
 } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -21,7 +15,7 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import {  PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -61,13 +55,13 @@ function MobileMenu({ open, onClose }: {
       <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div className="flex items-center justify-between">
           <Link href="/" aria-label="Your Company" className="-m-1.5 p-1.5">
-            {/* <Image
+            <Image
               src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
               alt="Your Company Logo"
               className="h-8 w-auto"
               width={100}
               height={100}
-            /> */}
+            />
           </Link>
           <button
             type="button"
