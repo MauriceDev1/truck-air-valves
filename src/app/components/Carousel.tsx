@@ -49,15 +49,17 @@ const Carousel = () => (
     }}
   >
     {parts.map(p => (
-      <SwiperSlide key={p.id}>
-        <div className="bg-gray-100 border border-gray-300 shadow-md rounded-lg text-center transform transition duration-500 hover:scale-105">
-          <Image
-            src={p.image}
-            alt={p.name}
-            width={1000}
-            height={1000}
-            className="w-48 m-auto min-h-56 p-6"
-          />
+      <SwiperSlide key={p.id} className="py-2">
+        <div className="bg-gray-100 border border-gray-300 shadow-md rounded-lg text-center">
+          <div className='flex min-h-56'>
+            <Image
+              src={p.image}
+              alt={p.name}
+              width={1000}
+              height={1000}
+              className="w-48 m-auto"
+            />
+          </div>
           <div className="py-3 bg-white text-center border-t rounded-b-lg border-gray-300">
             {p.name}
           </div>
