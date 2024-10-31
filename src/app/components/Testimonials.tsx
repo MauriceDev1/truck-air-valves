@@ -1,4 +1,5 @@
 // components/Testimonials.tsx
+import Image from 'next/image';
 import React from 'react';
 
 const testimonials = [
@@ -36,10 +37,12 @@ export default function Testimonials() {
               key={testimonial.id}
               className="bg-white shadow-md p-6 rounded-lg text-center transform transition duration-500 hover:scale-105"
             >
-              <img
+              <Image
                 className="w-16 h-16 rounded-full mx-auto mb-4"
                 src={testimonial.image}
                 alt={`${testimonial.name}'s profile`}
+                width={100}
+                height={100}
               />
               <h3 className="text-xl font-semibold text-gray-800">{testimonial.name}</h3>
               <p className="text-sm text-gray-500 mb-4">{testimonial.role}</p>
