@@ -13,57 +13,83 @@ export default function Home() {
         <Hero />
 
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between p-6 lg:px-8 my-10">
-          <div className="w-1/2 md:w-1/3 lg:w-1/4 text-center">
-            <div className="w-40 h-40 rounded-full bg-gray-100 border border-gray-400 m-auto flex">
+          <div className="w-1/2 md:w-1/3 lg:w-1/6 text-center">
+            <div className="w-24 h-24 rounded-full bg-gray-100 border border-gray-400 m-auto flex">
               <Image
                 src="/Images/engine.png"
                 alt=""
                 width={100}
                 height={100}
-                className="w-24 h-24 m-auto"
+                className="w-16 h-16 m-auto"
               /></div>
             <p className="text-lg font-semibold mt-3">
               Engine Parts
             </p>
           </div>
-          <div className="w-1/2 md:w-1/3 lg:w-1/4 text-center">
-            <div className="w-40 h-40 rounded-full bg-gray-100 border border-gray-400 m-auto flex">
+          <div className="w-1/2 md:w-1/3 lg:w-1/6  text-center">
+            <div className="w-24 h-24 rounded-full bg-gray-100 border border-gray-400 m-auto flex">
               <Image
                 src="/Images/gear-stick.png"
                 alt=""
                 width={100}
                 height={100}
-                className="w-24 h-24 m-auto"
+                className="w-16 h-16 m-auto"
               />
             </div>
             <p className="text-lg font-semibold mt-3">
               Transmission
             </p>
           </div>
-          <div className="w-1/2 md:w-1/3 mt-10 md:mt-0 lg:w-1/4 text-center">
-            <div className="w-40 h-40 rounded-full bg-gray-100 border border-gray-400 m-auto flex">
+          <div className="w-1/2 md:w-1/3   mt-10 md:mt-0 lg:w-1/6 text-center">
+            <div className="w-24 h-24 rounded-full bg-gray-100 border border-gray-400 m-auto flex">
               <Image
                 src="/Images/battery.png"
                 alt=""
                 width={100}
                 height={100}
-                className="w-24 h-24 m-auto"
+                className="w-16 h-16 m-auto"
               /></div>
             <p className="text-lg font-semibold mt-3">
               Electrical
             </p>
           </div>
-          <div className="w-1/2 md:w-1/3 mt-10 lg:mt-0 lg:w-1/4 text-center">
-            <div className="w-40 h-40 rounded-full bg-gray-100 border border-gray-400 m-auto flex">
+          <div className="w-1/2 md:w-1/3 mt-10 lg:mt-0 lg:w-1/6 text-center">
+            <div className="w-24 h-24 rounded-full bg-gray-100 border border-gray-400 m-auto flex">
               <Image
                 src="/Images/shock-absorber.png"
                 alt=""
                 width={100}
                 height={100}
-                className="w-24 h-24 m-auto"
+                className="w-16 h-16 m-auto"
               /></div>
             <p className="text-lg font-semibold mt-3">
               Suspension
+            </p>
+          </div>
+          <div className="w-1/2 md:w-1/3 mt-10 lg:mt-0 lg:w-1/6 text-center">
+            <div className="w-24 h-24 rounded-full bg-gray-100 border border-gray-400 m-auto flex">
+              <Image
+                src="/Images/brakes.png"
+                alt=""
+                width={100}
+                height={100}
+                className="w-16 h-16 m-auto"
+              /></div>
+            <p className="text-lg font-semibold mt-3">
+              Braking System
+            </p>
+          </div>
+          <div className="w-1/2 md:w-1/3 mt-10 lg:mt-0 lg:w-1/6 text-center">
+            <div className="w-24 h-24 rounded-full bg-gray-100 border border-gray-400 m-auto flex">
+              <Image
+                src="/Images/muffler.png"
+                alt=""
+                width={100}
+                height={100}
+                className="w-16 h-16 m-auto"
+              /></div>
+            <p className="text-lg font-semibold mt-3">
+              Exhaust System
             </p>
           </div>
         </div>
@@ -112,7 +138,7 @@ export default function Home() {
         </div>
 
         {/* New Arrivals or Latest Additions */}
-        <div className="mx-auto max-w-7xl items-center justify-between p-6 lg:px-8">
+        <div className="mx-auto max-w-7xl items-center justify-between p-6 lg:px-8 mb-10">
           <h1 className="text-2xl mb-10">New Arrivals?</h1>
           <Carousel />
         </div>

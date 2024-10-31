@@ -34,18 +34,9 @@ const Carousel = () => (
     loop={true}
     autoplay={{ delay: 3000 }}
     breakpoints={{
-      // when window width is <= 640px
-      640: {
-        slidesPerView: 1, // Show 1 slide on small devices
-      },
-      // when window width is > 640px and <= 768px
-      768: {
-        slidesPerView: 2, // Show 2 slides on medium devices
-      },
-      // when window width is > 768px
-      769: {
-        slidesPerView: 4, // Show 4 slides on larger devices
-      },
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      769: { slidesPerView: 4 },
     }}
   >
     {parts.map(p => (

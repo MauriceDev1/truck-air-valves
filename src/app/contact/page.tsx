@@ -1,7 +1,7 @@
 export default function Contact () {
     return (
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between p-6 lg:px-8">
-            <div className="w-full sm:w-1/2 mx-auto py-8">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between  lg:px-8 min-h-screen">
+            <div className="w-full sm:w-1/2 mx-auto -mt-56">
             <h1 className="text-3xl pb-10">
                 Get in touch with us
             </h1>

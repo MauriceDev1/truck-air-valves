@@ -38,7 +38,7 @@ export default function Testimonials() {
               className="bg-white shadow-md p-6 rounded-lg text-center transform transition duration-500 hover:scale-105"
             >
               <Image
-                className="w-16 h-16 rounded-full mx-auto mb-4"
+                className="w-20 h-20 rounded-full mx-auto mb-4"
                 src={testimonial.image}
                 alt={`${testimonial.name}'s profile`}
                 width={100}

@@ -39,7 +39,7 @@ function MobileMenu({ open, onClose }: {
         <div className="flex items-center justify-between">
           <Link href="/" aria-label="Your Company" className="-m-1.5 p-1.5">
             <Image
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+              src="/Images/Gemini_Generated_Image_jvn550jvn550jvn5-removebg-preview (1).png"
               alt="Your Company Logo"
               className="h-8 w-auto"
               width={100}
@@ -83,9 +83,9 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5" aria-label="Home">
             <Image
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+              src="/Images/Gemini_Generated_Image_jvn550jvn550jvn5-removebg-preview (1).png"
               alt="Your Company Logo"
-              className="h-8 w-auto"
+              className="h-12 w-auto"
               width={100}
               height={100}
             />
